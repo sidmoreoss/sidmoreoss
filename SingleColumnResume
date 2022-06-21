@@ -1,0 +1,149 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Siddharth}{More}{ \urlstyle{same}\url{http://example.com} \\
+\href{mailto:user@example.com}{user@example.com} | 123.456.7890
+}
+
+\href{http://linkedin.com/in/12346}{http://linkedin.com/in/12346}
+
+\begin{center}
+\huge\color{subheadings}\custombold{LIFELONG LEARNER}
+\end{center}
+
+\section{Experience}
+
+\runsubsection{Software engineer - Celigo Inc.}
+\descript{| Hyderabad, 1/21}
+\location{Worked on React, Redux, Redux-Sagas to enhance the product to suite various customer needs}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed a feature to enable users to view integrations in the form of a list or grid.
+\item Developed preview panels for the UI which uses user's input to make an API call to the endpoint and display the response data in a user friendly format.
+\item Developed Save \& Close feature for all drawers accross the application.
+\item Developed a new connector with BE team to support GraphQL api calls in a user friendly format to enable new users to use GraphQL with ease.
+\item Enhanced the UI to support 500+ forms while enabling the users to create their own forms.
+\item Wrote unit test cases for UX and UI to ensure robust code.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Extra Curricular}
+\runsubsection{Vision (Technical Club of MANIT)}
+\descript{| Core team member}
+\location{June 2018 - current | MANIT}
+\location{Worked with 12 team members to organize and manage various events on campus}
+\begin{tightemize}
+\item Organized and managed coding contest Code-Golf-2019 (500+ participants) by working as a problem-setter and tester.
+\item Taught in Workshops to 100+ audiences on Python and C Programming.
+\item Managed and Organized Code Krieger’s 5.0 an app based treasure hunt by promoting the event throughout the campus and guiding participants.
+\end{tightemize}
+\sectionsep
+% \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+
+\runsubsection{ACM ICPC}
+\descript{| Coding Competition}
+\location{March 2019 | MANIT}
+\sectionsep
+
+
+\section{Education}
+\subsection{Maulana Azad National Institute of technology}
+\descript{Btech in Computer Science}
+\location{Grad. July 2021 | Bhopal}
+\location{ GPA: 8.5 / 10}
+\sectionsep
+
+\subsection{HSC}
+\descript{Higher Secondary Certificate}
+\location{April 2017}
+\location{Percentage : 88.15 \%}
+\sectionsep
+
+\section{Skills}
+\begin{minipage}[t]{.6\textwidth}
+\subsection{Programming}
+\location{Over 21000 lines:}
+Shell \textbullet{} JavaScript \textbullet{} React \textbullet{} Redux \textbullet{} Redux-Saga \\ 
+\location{Over 10000 lines:}
+C++ \textbullet{} \LaTeX\ \\  
+\location{Familiar:}
+HTML \textbullet{} CSS
+\sectionsep
+\end{minipage}
+% \hfill
+% \begin{minipage}[t]{.35\textwidth}
+% \subsection{Spoken \& Written}
+% \location{Native fluency:} English, Spanish\\
+% \location{Reading fluency:} Chinese, Japanese\\
+% \end{minipage}
+
+\end{document}  \documentclass[]{article}
